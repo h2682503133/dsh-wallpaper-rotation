@@ -1,0 +1,8 @@
+# dsh-wallpaper-rotation: adds the wallpaper slideshow plugin row to the web
+# profile. Install with `dsh plugin --profile <name> add <npm-package-or-path>`;
+# the row lands in the host Loader plus the browser roster, no harness edits.
+- insert:
+    - id: dsh-wallpaper-rotation
+      name: dsh-wallpaper-rotation
+      config:
+        enabled: true

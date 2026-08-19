@@ -1,0 +1,59 @@
+{
+  "name": "dsh-wallpaper-rotation",
+  "version": "0.2.3",
+  "description": "DeepSeek Harness WebUI wallpaper plugin: timed slideshow rotation over local images with per-theme (light/dark) wallpaper groups.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/package-contract.test.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "wallpaper",
+    "slideshow",
+    "rotation",
+    "theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h2682503133/dsh-wallpaper-rotation.git"
+  },
+  "homepage": "https://github.com/h2682503133/dsh-wallpaper-rotation",
+  "bugs": {
+    "url": "https://github.com/h2682503133/dsh-wallpaper-rotation/issues"
+  },
+  "license": "MIT"
+}
+
+
+
+
+
+
