@@ -1,6 +1,6 @@
 {
   "name": "dsh-wallpaper-rotation",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "DeepSeek Harness WebUI wallpaper plugin: timed slideshow rotation over local images with per-theme (light/dark) wallpaper groups.",
   "type": "module",
   "main": "./lib/index.js",
